@@ -14,6 +14,12 @@
 # limitations under the License.
 #
 
-add_lunch_combo aosp_berkeley-userdebug
-add_lunch_combo carbon_berkeley-userdebug
-add_lunch_combo aosip_berkeley-userdebug
+$(call inherit-product, device/huawei/berkeley/full_berkeley.mk)
+
+# Inherit some common AOSiP stuff.
+$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+
+PRODUCT_NAME := aosip_berkeley
+PRODUCT_DEVICE := berkeley
+PRODUCT_BRAND := Huawei
+PRODUCT_MODEL := Honor View 10

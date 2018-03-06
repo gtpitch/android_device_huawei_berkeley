@@ -17,7 +17,7 @@
 $(call inherit-product-if-exists, vendor/huawei/berkeley/berkeley-vendor.mk)
 $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 
-GAPPS_VARIANT := mini
+GAPPS_VARIANT := pico
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -65,7 +65,7 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0
 
 # KeyHandler
-PRODUCT_PACKAGES += \
+#PRODUCT_PACKAGES += \
     org.lineageos.keyhandler
 
 # NFC
