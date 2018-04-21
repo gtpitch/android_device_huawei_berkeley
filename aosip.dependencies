@@ -1,0 +1,7 @@
+[
+  {
+    "repository": "berkeley-dev/proprietary_vendor_huawei_berkeley",
+    "target_path": "vendor/huawei/berkeley",
+    "branch": "master"
+  }
+]
