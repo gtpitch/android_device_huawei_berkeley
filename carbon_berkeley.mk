@@ -16,10 +16,11 @@
 
 $(call inherit-product, device/huawei/berkeley/full_berkeley.mk)
 
-# Inherit some common AOSiP stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+# Inherit some common Carbon stuff.
+$(call inherit-product, vendor/carbon/config/common.mk)
+$(call inherit-product, vendor/carbon/config/gsm.mk)
 
-PRODUCT_NAME := aosip_berkeley
+PRODUCT_NAME := carbon_berkeley
 PRODUCT_DEVICE := berkeley
 PRODUCT_BRAND := Huawei
 PRODUCT_MODEL := Honor View 10

@@ -16,7 +16,7 @@
 
 package org.lineageos.hardware;
 
-import com.android.internal.util.aosip.FileUtils;
+import com.android.internal.util.cr.FileUtils;
 
 /**
  * Glove mode / high touch sensitivity

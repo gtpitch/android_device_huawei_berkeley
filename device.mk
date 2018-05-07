@@ -18,8 +18,16 @@ $(call inherit-product-if-exists, vendor/huawei/berkeley/berkeley-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-aosip
+    $(LOCAL_PATH)/overlay
+
+ifeq ($(TARGET_PRODUCT),carbon_berkeley)
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-carbon
+
+# KeyHandler
+PRODUCT_PACKAGES += \
+    org.carbonrom.keyhandler
+endif
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
